@@ -1,1 +1,3 @@
-.footer .location-frame {}
+#mainSlider, #mainSlider .img--holder {
+    height: 800px;
+}
