@@ -1236,7 +1236,9 @@ $(function () {
 		var $tabs = $('.js-department-tabs'),
 			$departments = $('.js-department-carousel');
 		$tabs.children().each(function (i) {
+			
 			$(this).on('click', function () {
+				console.log('tab clicked', i);
 				$(this).siblings().removeClass('active');
 				$(this).addClass('active');
 				$departments.slick('slickGoTo', i);

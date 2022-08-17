@@ -48,20 +48,25 @@
 				// contact page form
 				if (forms.contactForm.length) {
 					var $contactform = forms.contactForm;
+					
 					$contactform.validate({
 						rules: {
 							name: {
 								required: true,
 								minlength: 2
 							},
-							message: {
+							phone: {
 								required: true,
-								minlength: 20
+								minlength: 9
 							},
-							email: {
-								required: true,
-								email: true
-							}
+							// message: {
+							// 	required: true,
+							// 	minlength: 20
+							// },
+							// email: {
+							// 	required: true,
+							// 	email: true
+							// }
 
 						},
 						messages: {
@@ -69,27 +74,52 @@
 								required: "Please enter your name",
 								minlength: "Your name must consist of at least 2 characters"
 							},
-							message: {
-								required: "Please enter message",
-								minlength: "Your message must consist of at least 20 characters"
-							},
-							email: {
-								required: "Please enter your email"
-							}
+							// message: {
+							// 	required: "Please enter message",
+							// 	minlength: "Your message must consist of at least 20 characters"
+							// },
+							// email: {
+							// 	required: "Please enter your email"
+							// }
 						},
-						submitHandler: function submitHandler(form) {
-							$(form).ajaxSubmit({
-								type: "POST",
-								data: $(form).serialize(),
-								url: "form/process-contact.php",
-								success: function success() {
-									$('.successform', $contactform).fadeIn();
-									$contactform.get(0).reset();
-								},
-								error: function error() {
-									$('.errorform', $contactform).fadeIn();
+						submitHandler: async function submitHandler(form) {
+							const url = "https://afzalov.uz/api/book";
+							// const url = 'http://localhost:5000/api/book';
+							const elements = document.forms['contactForm'].elements;
+							const body = {};
+							for(let elem of elements) {
+								if(elem.name) {
+									body[elem.name] = elem.value;
 								}
-							});
+								
+							}
+
+							fetch(url, {
+								body: JSON.stringify(body),
+								headers : {
+									'Content-type' : 'application/json',
+								},
+								method: 'POST',
+							})
+							.then( () => {
+								$('.successform', $contactform).fadeIn();
+								$contactform.get(0).reset();
+							})
+							.catch((e) => {
+								$('.errorform', $contactform).fadeIn();
+							})
+
+							// $(form).ajaxSubmit({
+							// 	type: "POST",
+							// 	data: $(form).serialize(),
+							// 	url: url,
+							// 	success: function success() {
+									
+							// 	},
+							// 	error: function error() {
+									
+							// 	}
+							// });
 						}
 					});
 				}
@@ -145,20 +175,25 @@
 				// booking form
 				if (forms.bookingForm.length) {
 					var $bookingForm = forms.bookingForm;
+					console.log('Booking form', $bookingForm);
 					$bookingForm.validate({
 						rules: {
 							bookingname: {
 								required: true,
 								minlength: 2
 							},
-							bookingmessages: {
+							bookingPhone: {
 								required: true,
-								minlength: 20
+								minlength: 7
 							},
-							bookingemail: {
-								required: true,
-								email: true
-							}
+							// bookingmessages: {
+							// 	required: true,
+							// 	minlength: 20
+							// },
+							// bookingemail: {
+							// 	required: true,
+							// 	email: true
+							// }
 
 						},
 						messages: {
