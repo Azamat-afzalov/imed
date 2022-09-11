@@ -8,20 +8,21 @@
 	<meta name="description" content="html 5 template, dentist, stomatologist, dental clinic template, medical template, clinic template, surgery clinic theme, plastic surgery template">
 	<meta name="author" content="websmirno.site">
 	<meta name="format-detection" content="telephone=no">
-	<title>Medin - HTML Website Template</title>
+	<title>Imed Clinic</title>
 	<!-- Stylesheets -->
 	<link href="vendor/slick/slick.css" rel="stylesheet">
 	<link href="vendor/animate/animate.min.css" rel="stylesheet">
 	<link href="icons/style.css" rel="stylesheet">
 	<link href="vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style-color-5.css">
+
 	<!-- My custom styles -->
 	<link rel="stylesheet" href="css/custom.css">
 	<!--Favicon-->
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/iMedClinicLogo.png" type="image/x-icon">
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> -->
 	<!-- Google map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiFdr5Z0WRIXKUOqoRRvzRQ5SkzhkUVjk"></script>
 </head>
@@ -75,7 +76,7 @@
 				<div class="col-lg ml-auto header-nav-wrap">
 					<div class="header-nav js-header-nav">
 						<nav class="navbar navbar-expand-lg btco-hover-menu">
-							<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+							<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 								<ul class="navbar-nav">
 									<li class="nav-item">
 										<a class="nav-link link-inside" href="#aboutSection">О нас</a>
@@ -400,233 +401,105 @@
 			<p class="text-center max-500">Медицинский центр iMedClinic специализируется на различных медицинских услугах для удобства населения:</p>
 			<div class="row mt-lg-4">
 				<div class="col-12">
-					<div class="department-tabs js-department-tabs d-none d-sm-flex">
-						<div 
+					<div class="department-tabs js-department-tabs d-sm-flex">
+						<a 
+							href="./departments/mri.html"
 							class="department-tab active" 
 						>
 							<img src="./images/sections/radiology.jpg" class="department-tab-img" alt="radiology" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-brain"></i></div> -->
-							<div class="department-tab-text">Радиология</div>
-						</div>
-						<div 
+							<div class="department-tab-text">МРТ</div>
+						</a>
+						<a 
+							href="./departments/msct.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/msct.jpg" class="department-tab-img" alt="radiology" srcset="">
+							<div class="department-tab-text">МСКТ</div>
+						</a>
+						<a 
+							href="./departments/ultrasound.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/ultrasound.jpg" class="department-tab-img" alt="radiology" srcset="">
+							<div class="department-tab-text">УЗИ</div>
+						</a>
+						<a 
+							href="./departments/laboratory.html"
 							class="department-tab"	
 						>
 							<img src="./images/sections/labaratory.jpg" class="department-tab-img" alt="labaratory" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-lab"></i></div> -->
 							<div class="department-tab-text">Лаборатория</div>
-						</div>
-						<div class="department-tab">
+						</a>
+						<a 
+							href="./departments/mri.html" 
+							class="department-tab"
+						>
 							<img src="./images/sections/neurology.jpg" class="department-tab-img" alt="neurology" srcset="">
-							<div class="department-tab-text">Неврология</div>
-						</div>
-						<div class="department-tab">
-							<img src="./images/sections/pediatrics.jpg" class="department-tab-img" alt="pediatrics" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-pediatrics"></i></div> -->
-							<div class="department-tab-text">Педиатрия</div>
-						</div>
-						<div class="department-tab">
-							<img src="./images/sections/gynecology.jpg" class="department-tab-img" alt="gynecology" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-gynecology"></i></div> -->
-							<div class="department-tab-text">Гинекология</div>
-						</div>
-						<div class="department-tab">
+							<div class="department-tab-text">Невролог</div>
+						</a>
+						<a 
+							href="./departments/therapy.html"
+							class="department-tab" 
+						>
 							<img src="./images/sections/therapy.jpg" class="department-tab-img" alt="therapy" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-cardiology"></i></div> -->
-							<div class="department-tab-text">Терапия</div>
-						</div>
-						
-						<div class="department-tab">
-							<img src="./images/sections/physioterapy.jpg" class="department-tab-img" alt="physioterapy" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-medicine"></i></div> -->
-							<div class="department-tab-text">Физиотерапия</div>
-						</div>
-						<div class="department-tab">
+							<div class="department-tab-text">Терапевт</div>
+						</a>
+						<a 
+							href="./departments/gynecology.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/gynecology.jpg" class="department-tab-img" alt="gynecology" srcset="">
+							<div class="department-tab-text">Гинеколог</div>
+						</a>
+						<a 
+							href="./departments/othaloringology.html"
+							class="department-tab" 
+						>
 							<img src="./images/sections/otalaringolog.jpg" class="department-tab-img" alt="operational-block" srcset="">
-							<!-- <div class="department-tab-icon"><i class="icon-traumatology"></i></div> -->
 							<div class="department-tab-text">ЛОР</div>
-						</div>
-						
+						</a>
+						<a 
+							href="./departments/phediatrics.html"
+							class="department-tab"
+						>
+							<img src="./images/sections/pediatrics.jpg" class="department-tab-img" alt="pediatrics" srcset="">
+							<div class="department-tab-text">Педиатр</div>
+						</a>
+						<a 
+							href="./departments/endocrinology.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/endocrinology.jpg" class="department-tab-img" alt="radiology" srcset="">
+							<div class="department-tab-text">Эндокринолог</div>
+						</a>
+						<a 
+							href="./departments/physiotherapy.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/physioterapy.jpg" class="department-tab-img" alt="physioterapy" srcset="">
+							<div class="department-tab-text">Физиотерапевт</div>
+						</a>
+						<a 
+							href="./departments/colposcopy.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/colposcopy.jpg" class="department-tab-img" alt="radiology" srcset="">
+							<div class="department-tab-text">Кольпоскопия</div>
+						</a>
+						<a 
+							href="./departments/eeg.html"
+							class="department-tab" 
+						>
+							<img src="./images/sections/eeg.jpg" class="department-tab-img" alt="radiology" srcset="">
+							<div class="department-tab-text">ЭЭГ</div>
+						</a>
 					</div>
 				</div>
+			</div>
 				
-			</div>
-			<div class="row mt-lg-4">
-				<div class="col-12">
-					<div class="department-carousel js-department-carousel">
-						<div class="department-item">
-							<h3 data-title="Radiology" class="text-center"><span>Радиология</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-icon"><i class="icon-brain"></i></div>
-								<div class="department-tab-text">Радиология</div>
-							</div>
-							<p>Отделение радиологии состоит из Магнитно-резонансного томографа (МРТ), Мультиспиральной компьютерной томографии (МСКТ) и ультразвуковой диагностики (УЗИ).</p>
-							<p>Магнитно-резонансная томография сегодня широко используется в медицине. Этот метод лучевой диагностики практически не имеет аналогов, поскольку он основан на эффекте ядерного магнитного резонанса. При помощи МРТ врачи исследуют структуры головного и спинного мозга, позвоночника, суставов, брюшной полости, репродуктивной системы и ряда других органов.</p>
-							<p>В IMED CLINIC можно пройти МРТ быстро и с полной расшифровкой полученных результатов.А компьютерная томография  – современный метод лучевой диагностики большинства заболеваний. Главные его преимущества – исследование проводится быстро, и при этом сканируются обширные анатомические области. Это универсальная методика для установления нового или уточнения имеющегося диагноза.</p>
-						
-						</div>
-						<div class="department-item">
-							<h3 data-title="Laboratory" class="text-center"><span>Лаборатория</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-icon"><i class="icon-lab"></i></div>
-								<div class="department-tab-text">Лаборатория</div>
-							</div>
-							<p>
-								Медицинский центр IMED CLINIC располагает современной клинико-диагностической лабораторией, имеющей сертификат контроля качества. Мы имеем возможность проводить широчайший спектр лабораторной диагностики в соответствии с высокими cтандартами.
-							</p>
-							<p>
-								В IMED CLINIC можно сдать любые анализы в день обращения и получить результаты по определенным позициям в этот же день. По Вашей просьбе  мы отправляем результаты по электронной почте. Сдать анализы в нашем центре Вы можете в любой день недели с 8 до 20 часов. Новейшее оборудование обеспечивает высокую скорость и точность выполнения исследований. Обращайтесь!
-							</p>
-						</div>
-						<div class="department-item">
-							<h3 data-title="Neurology" class="text-center"><span>Неврология</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-text">Неврология</div>
-							</div>
-							<p>
-								Кружится голова? Наблюдается потеря внимания? Чувствуется слабость и быстрая утомляемость? Ухудшилась память? Боль в спине и шее не дает возможности нормально жить?
-							</p>
-							<p>
-								Это поводы для обращения к неврологу. Стрессы, плохая экология, пассивный образ жизни или, наоборот, чрезмерная физическая нагрузка – это лишь немногие из возможных причин развития неврозов, тревожных состояний и тяжелых неврологических болезней.
-							</p>
-							<p>
-								В медицинском центре  IMED CLINIC в отделении неврология осуществляются следующие:
-							</p>
-							<ul>
-								<li>Комплексная диагностика неврологических заболеваний</li>
-								<li>Передовые  и авторские методы лечения</li>
-								<li>Восстановительное лечение: массаж, рефлексотерапия, физиотерапия</li>
-								<li>Инъекционное и капельное лечение</li>
-							</ul>
-						</div>
-						<div class="department-item">
-							<h3 data-title="Cardiology" class="text-center"><span>Педиатрия</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-text">Педиатрия</div>
-							</div>
-							<p>
-								Педиатрическое отделение отвечает за здоровье детей и подростков, начиная с новорожденных до детей подросткового возраста когда завершается период роста и развития. 
-							</p>
-							<p>
-								Специалисты отделения уделяют особое внимание диагностике и лечению разнообразных хронических заболеваний, врожденных и наследственных заболеваний, проблем развития поведения и психогенных заболеваний в различных областях, таких как сердце, новорожденные, опухоль крови,наследственный метаболизм эндокринной системы, аллергия дыхательной системы, нервы, инфекция, почки, тяжелобольные пациенты, экстренная медицина и т.д., и проводятвакцинацию и регулярную диагностику для раннего выявления заболеваний и улучшения здоровья детей и подростков в зависимости от их возраста.
-							</p>
-						</div>
-						<div class="department-item">
-							<h3 data-title="Gynecology" class="text-center"><span>Гинекология</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-text">Гинекология</div>
-							</div>
-							<span>
-								Мы предоставляем полный спектр лечения гинекологических заболеваний. Наши специалисты-высококвалифицированные врачи, специалисты в своей области.
-							</span>
-							<span>Специализации:</span>
-							<ul>
-								<li>гинекологическое обследование</li>
-								<li>первичный осмотр, онкоцитологический мазок, мазок выделений из влагалища, посев из шейки матки, все современные лабораторные методы обследования, необходимые для индивидуальной точной диагностики Вашего состояния и оценки рисков</li>
-								<li>кольпоскопия: безопасный, не инвазивный, высокоинформативный метод диагностики заболеваний шейки матки, не имеющий противопоказаний;</li>
-								<li>гистеросальпингография, обследование, показания для которого: бесплодие, спаечный процесс в малом тазу, подозрение на врожденные пороки развития женских половых органов, подозрение на наличие доброкачественных и злокачественных опухолей в матке и придатках.</li>
-								<li>диагностика опухолей яичников;</li>
-								<li>диагностика и лечение эндометриоза;</li>
-								<li>лечение шейки матки любой степени сложности;</li>
-								<li>индивидуальный подбор средств контрацепции;</li>
-								<li>постановка и удаление внутриматочного контрацептива;</li>
-								<li>удаление папилом;</li>
-								<li>лечение инфекционных, воспалительных заболеваний, передающихся половым путём;</li>
-								<li>скрытие и дренирование абсцессов бартолиниевой железы;</li>
-								<li>коррекция недержания мочи консервативными методами;</li>
-								<li>выявление проблем нарушения пред- и пост менопаузальных состояний;</li>
-								<li>восстановление менструального цикла;</li>
-								<li>сделать все возможное прежде чем обратиться на ЭКО;</li>
-								<li>подготовка и ведение беременности женщин имеющих заболевания: сахарный диабет 1 и 2 типа, щитовидной железы, почек, сердечно –сосудистой системы, заболевания крови;</li>
-								<li>консультации семейных пар;</li>
-							</ul>
-						</div>
-						<div class="department-item">
-							<h3 data-title="Medicine" class="text-center"><span>Терапия</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-text">Терапия</div>
-							</div>
-							<p>
-								Терапевт – это первый врач, который встречает Вас в нашем медицинском центре. Именно ему предстоит, на основании первичного знакомства с пациентом, анализа всех его жалоб, изучения всех симптомов, выявить природу заболевания и определить направление для дальнейшей, более точной и глубокой, диагностики и лечения. Это специалист высокой квалификации, настоящий врач-универсал, от профессионализма и опыта которого напрямую зависят точность диагноза и правильность лечения пациента.
-							</p>
-							
-						</div>
-						<div class="department-item">
-							<h3 data-title="Traumatology" class="text-center"><span>Физиотерапия</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-text">Физиотерапия</div>
-							</div>
-							<p>
-								Использование физиотерапевтических методов постоянно расширяется, и сегодня трудно найти заболевание, при котором физиотерапию невозможно применить с пользой для здоровья. Процедуры можно успешно комбинировать с медикаментозной терапией, усиливая положительное влияние на организм.
-							</p>
-							<p>
-								IMED CLINIC предлагает методы физиотерапии, которые применяются для улучшения функциональных возможностей организма, лечения, оздоровления и профилактики. Процедуры проводятся путем воздействия на организм человека факторами природного или искусственного происхождения, включая тепло, холод, электроток, магнит и ультразвук. Также в качестве реабилитации применяется мануальная терапия в виде различных видов массажа.	
-							</p>
-						</div>
-						<div class="department-item">
-							<h3 data-title="otalaringolog" class="text-center"><span>Лор</span></h3>
-							<div class="department-tab">
-								<div class="department-tab-text">Лор</div>
-							</div>
-							<p>
-								Каждый из нас сталкивался с затяжным насморком, кашлем и болями в горле, которые мешают вести привычный образ жизни. Вы можете даже не знать, что проблема может быть связана с искривлением носовой перегородки, различными видами ринита, полипами или новообразованиями носа и околоносовых пазух. 
-							</p>
-							<p>
-								В медицинском центре IMED CLINIC успешно диагностируют и лечат различную лор-патологию: наружные и средние отиты, заболевания носа и его придаточных пазух, доброкачественные новообразования ЛОР- органов, ангины, хронический тонзиллит, фарингиты, аденоиды и т.п.
-							</p>
-							<p>
-								Особое внимание наши врачи уделяют персонализированному подходу к каждому пациенту, используя в работе современные как терапевтические, так и хирургические методы лечения. 
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
+			
 	</div>
-
-	<div class="section mt-4" id="servicesSection">
-		<div class="container">
-			<div class="title-wrap text-center">
-				<h2 class="h1">Наши услуги</h2>
-				<div class="h-decor"></div>
-			</div>
-			<div class="row js-service-card-style2-carousel">
-				<div class="col-md-6 col-lg-4">
-					<div class="service-card-style2">
-						<div class="service-card-icon">
-							<i class="icon-doctor"></i>
-						</div>
-						<h5 class="service-card-name">Первичная медико-санитарная помощь</h5>
-						<p>Центр iMedClinic предоставляет следующие медицинские услуги:</p>
-						<ul class="marker-list-md">
-							<li>Полное семейное здравоохранение</li>
-							<li>ЭКГ</li>
-							<li>Рентгеновский снимок</li>
-							<li>УЗИ</li>
-							<li>Острая и хроническая помощь</li>
-							<li>Женский экзамен</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="service-card-style2">
-						<div class="service-card-icon">
-							<i class="icon-genetics"></i>
-						</div>
-						<h5 class="service-card-name">Аллергия и иммунология</h5>
-						<p>Вы должны чувствовать себя лучше, независимо от времени года. </p>
-						<ul class="marker-list-md">
-							<li>Аллергические и иммунологические заболевания</li>
-							<li>Тестирование на аллергию и иммунологию</li>
-							<li>Лечение аллергии и иммунологии</li>
-							<li>Лечение астмы</li>
-							<li>Дерматология</li>
-							<li>Детская аллергология и иммунология</li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
 	</div>
 	
 	<div class="section mt-4" id="specialistsSection">
@@ -781,12 +654,14 @@
 		<div class="banner-contact-us" style="background-image: url(images/content/contact-bg.png)">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-sm-6 col-lg-6 order-2 order-sm-1 mt-3 mt-md-0 text-center text-md-right d-flex align-items-end">
-						<img src="images/content/banner-callus.png" alt="" class="shift-left">
-					</div>
-					<div class="col-sm-6 col-lg-6 order-1 order-sm-2 d-flex">
+					
+					<div class="col-6 offset-3 order-1 order-sm-2 d-flex">
 						<div class="pt-2 pt-lg-6">
-							<h2 data-title="Ищете сертифицированного врача?"><span>Ищете <span class="theme-color">сертифицированного врача?</span></span></h2>
+							<h2 class="text-center">
+								<span>
+									Ищете <span class="theme-color">сертифицированного врача?</span>
+								</span>
+							</h2>
 							<p>
 								Мы верим в обеспечение наилучшего ухода для всех наших существующих пациентов и приглашаем новых пациентов на пробу.
 							</p>
@@ -825,13 +700,12 @@
 			</div>
 		</div>
 	</div>
-	<!--//section contact-->
 </div>
 <!--footer-->
 <div class="footer mt-0">
 	<div class="container">
 		<div class="row py-1 py-md-2 px-lg-0">
-			<div class="col-lg-4 footer-col1">
+			<div class="col-sm-6 footer-col1">
 				<div class="row flex-column flex-md-row flex-lg-column">
 					<div class="col-md col-lg-auto">
 						<div class="footer-logo">
@@ -847,16 +721,12 @@
 					</div>
 					<div class="col-md">
 						<div class="footer-text mt-1 mt-lg-2">
-							<p>Чтобы получать выпуски по электронной почте, просто предоставьте
-								<br>нам с вашим адресом электронной почты ниже</p>
-							<form action="./form/process-application.php" method="get" name="process-application" class="footer-subscribe">
-								<div class="input-group">
-									<input name="subscribe_mail" type="text" class="form-control" placeholder="Эл. адрес"/>
-									<span><i class="icon-black-envelope"></i></span>
-								</div>
-							</form>
+							<p style="font-size: 18px;">
+								Мы в социальных сетях
+							</p>
+							
 						</div>
-						<div class="footer-social d-md-none d-lg-block">
+						<div class="footer-social d-md-none d-lg-block mt-2">
 							<a href="https://www.facebook.com/" target="blank" class="hovicon"><i class="icon-facebook-logo"></i></a>
 							<a href="https://www.twitter.com/" target="blank" class="hovicon"><i class="icon-twitter-logo"></i></a>
 							<a href="https://plus.google.com/" target="blank" class="hovicon"><i class="icon-google-logo"></i></a>
@@ -866,13 +736,13 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-6 col-lg-4">
-				<h3>Нащы контакты</h3>
+			<div class="col-sm-6 ">
+				<h3>Наши контакты</h3>
 				<div class="h-decor"></div>
 				<ul class="icn-list">
-					<li><i class="icon-placeholder2"></i>г. Ташкент, Алмазарский район, ул. Кара-камыш-1, д. 1а
-						<br>
-						<a href="#" class="btn btn-xs btn-gradient"><i class="icon-placeholder2"></i><span>Проложить маршрут на карте</span><i class="icon-right-arrow"></i></a>
+					<li>
+						<i class="icon-placeholder2"></i>
+						г. Ташкент, Алмазарский район, ул. Кара-камыш-1, д. 1а
 					</li>
 					<li>
 						<i class="icon-telephone"></i>
@@ -889,40 +759,19 @@
 					<li><i class="icon-black-envelope"></i><a href="mailto:imedclinic@inbox.ru">imedclinic@inbox.ru</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+		</div>
+		<div class="row px-lg-0">
+			<div class="col-12 py-2">
 				<iframe 
 					class="location-frame"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.3070623460558!2d69.21390785251036!3d41.36074028941661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fb0025cadfcf5d7!2zNDHCsDIxJzM4LjciTiA2OcKwMTInNTMuNiJF!5e0!3m2!1sru!2s!4v1659336773974!5m2!1sru!2s"
-					width="600" 
+					width="100%" 
 					height="450" 
 					style="border:0;" 
 					allowfullscreen="" 
 					loading="lazy" 
 					referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
-				<!-- <h3>Сообщения в блоге</h3>
-				<div class="h-decor"></div>
-				<div class="footer-post d-flex">
-					<div class="footer-post-photo"><img src="images/content/footer-post-author-03.jpg" alt="" class="img-fluid"></div>
-					<div class="footer-post-text">
-						<div class="footer-post-title"><a href="#">Лекарства и здоровье полости рта</a></div>
-						<p>26 сентября 2018 г.</p>
-					</div>
-				</div>
-				<div class="footer-post d-flex">
-					<div class="footer-post-photo"><img src="images/content/footer-post-author-01.jpg" alt="" class="img-fluid"></div>
-					<div class="footer-post-text">
-						<div class="footer-post-title"><a href="#">Улыбайтесь на здоровье!</a></div>
-						<p>22 августа 2018 г.</p>
-					</div>
-				</div>
-				<div class="footer-post d-flex">
-					<div class="footer-post-photo"><img src="images/content/footer-post-author-02.jpg" alt="" class="img-fluid"></div>
-					<div class="footer-post-text">
-						<div class="footer-post-title"><a href="#">Традиции зубной феи...</a></div>
-						<p>25 июля 2018 г.</p>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</div>
