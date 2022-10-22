@@ -83,8 +83,8 @@
 							// }
 						},
 						submitHandler: async function submitHandler(form) {
-							const url = "https://afzalov.uz/api/book";
-							// const url = 'http://localhost:5000/api/book';
+							// const url = "https://imed-clinic.com/api/book";
+							const url = 'http://localhost:5000/api/book';
 							const elements = document.forms['contactForm'].elements;
 							const body = {};
 							for(let elem of elements) {
