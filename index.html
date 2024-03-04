@@ -6,10 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="description"
-		content="html 5 template, dentist, stomatologist, dental clinic template, medical template, clinic template, surgery clinic theme, plastic surgery template">
+		content="Медицинский центр iMedClinic специализируется на различных медицинских услугах: МРТ, МСКТ, УЗИ, Анализы крови, диагностические услуги и дневной стационар и другие">
 	<meta name="author" content="websmirno.site">
 	<meta name="format-detection" content="telephone=no">
-	<title>Imed Clinic</title>
+	<title>Imed Clinic - многопрофильная клиника в Ташкенте | МРТ, МСКТ</title>
 	<!-- Stylesheets -->
 	<link href="vendor/slick/slick.css" rel="stylesheet">
 	<link href="vendor/animate/animate.min.css" rel="stylesheet">
@@ -26,6 +26,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> -->
 	<!-- Google map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiFdr5Z0WRIXKUOqoRRvzRQ5SkzhkUVjk"></script>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90900459, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90900459" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="shop-page layout-landing">
@@ -44,6 +61,11 @@
 							г. Ташкент, Алмазарский район, ул. Кара-камыш-1, д. 1а
 						</div>
 						<div class="header-phone"><i class="icon-telephone"></i>
+							<a href="tel:+998991096622">
+								99 1096622
+							</a>
+						</div>
+						<div class="header-phone"><i class="icon-telephone"></i>
 							<a href="tel:+998712066622">
 								71 2066622
 							</a>
@@ -57,10 +79,14 @@
 								href="mailto:imedclinic@inbox.ru">imedclinic@inbox.ru</a></div>
 					</div>
 					<div class="col-auto ml-auto d-flex align-items-center">
-						<span class="header-social">
-							<a href="#" class="hovicon"><i class="icon-facebook-logo-circle"></i></a>
-							<a href="#" class="hovicon"><i class="icon-twitter-logo-circle"></i></a>
-							<a href="#" class="hovicon"><i class="icon-google-plus-circle"></i></a>
+						<span class="header-social d-flex align-items-center" style="column-gap: 4px;">
+							<a href="https://www.facebook.com/imedclinic.uz" target="_blank" class="hovicon"><i class="icon-facebook-logo-circle"></i></a>
+							<a href="https://t.me/imedclinic" target="_blank" class="hovicon" style="width: 22px; height: 22px">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 16 16">
+									<path fill="#ffffff" d="M8 0c-4.419 0-8 3.581-8 8s3.581 8 8 8 8-3.581 8-8-3.581-8-8-8zM11.931 5.484l-1.313 6.184c-0.091 0.441-0.356 0.544-0.725 0.341l-2-1.478-0.959 0.934c-0.112 0.109-0.2 0.2-0.4 0.2-0.259 0-0.216-0.097-0.303-0.344l-0.681-2.237-1.978-0.616c-0.428-0.131-0.431-0.425 0.097-0.634l7.706-2.975c0.35-0.159 0.691 0.084 0.556 0.625z"></path>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/imedclinic.uz/" target="_blank" class="hovicon"><i class="icon-instagram"></i></a>
 						</span>
 					</div>
 				</div>
@@ -142,13 +168,10 @@
 									<h5 class="link-drop-title"><i class="icon-clock"></i>Рабочее время</h5>
 									<table class="row-table">
 										<tr>
-											<td><i>пн-пт</i></td>
-											<td>08:00 - 20:00</td>
+											<td><i>Пн-Сб</i></td>
+											<td>08:00 - 21:00</td>
 										</tr>
-										<tr>
-											<td><i>Суббота</i></td>
-											<td>08:00 - 18:00</td>
-										</tr>
+										
 										<tr>
 											<td><i>Воскресенье</i></td>
 											<td>Закрыто</td>
@@ -162,88 +185,42 @@
 								</a>
 								<div class="link-drop">
 									<h5 class="link-drop-title"><i class="icon-pencil-writing"></i>Форма запроса</h5>
-									<form id="requestForm" method="post" novalidate>
+									<form class="contact-form" id="bookingForm" name="bookingForm" method="post"
+										novalidate="novalidate">
 										<div class="successform">
 											<p>Ваше сообщение было успешно отправлено!</p>
 										</div>
 										<div class="errorform">
 											<p>Что-то пошло не так, попробуйте обновить и отправить форму еще раз.</p>
 										</div>
-										<div class="input-group">
-											<span>
-												<i class="icon-user"></i>
-											</span>
-											<input name="requestname" type="text" class="form-control"
-												placeholder="Your Name" />
-										</div>
-										<div class="row row-sm-space mt-1">
-											<div class="col">
-												<div class="input-group">
-													<span>
-														<i class="icon-email2"></i>
-													</span>
-													<input name="requestemail" type="text" class="form-control"
-														placeholder="Your Email" />
-												</div>
-											</div>
-											<div class="col">
-												<div class="input-group">
-													<span>
-														<i class="icon-smartphone"></i>
-													</span>
-													<input name="requestphone" type="text" class="form-control"
-														placeholder="Your Phone" />
-												</div>
-											</div>
-										</div>
-										<div class="selectWrapper input-group mt-1">
-											<span>
-												<i class="icon-tooth"></i>
-											</span>
-											<select name="requestservice" class="form-control">
-												<option selected="selected" disabled="disabled">Выберите услугу</option>
-												<option value="Cosmetic Dentistry">Косметическая стоматология</option>
-												<option value="General Dentistry">Общая стоматология</option>
-												<option value="Orthodontics">Ортодонтия</option>
-												<option value="Children`s Dentistry">Детская стоматология</option>
-												<option value="Dental Implants">Зубные имплантаты</option>
-												<option value="Dental Emergency">Стоматологическая неотложная помощь
-												</option>
-											</select>
-										</div>
-										<div class="row row-sm-space mt-1">
+										<div class="row row-sm-space mt-15">
 											<div class="col-sm-6">
-												<div class="input-group flex-nowrap">
-													<span>
-														<i class="icon-calendar2"></i>
-													</span>
-													<div class="datepicker-wrap">
-														<input name="requestdate" type="text"
-															class="form-control datetimepicker" placeholder="Дата"
-															readonly>
-													</div>
-												</div>
+												<input type="text" class="form-control" name="name" placeholder="Имя*">
+
 											</div>
-											<div class="col-sm-6 mt-1 mt-sm-0">
-												<div class="input-group flex-nowrap">
-													<span>
-														<i class="icon-clock"></i>
-													</span>
-													<div class="datepicker-wrap">
-														<input name="requesttime" type="text"
-															class="form-control timepicker" placeholder="Время"
-															readonly>
-													</div>
-												</div>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" name="phone" placeholder="Телефон*">
+											</div>
+
+										</div>
+										<div class="row row-sm-space mt-15">
+											<div class="col-sm-6">
 											</div>
 										</div>
-										<div class="text-right mt-2">
-											<button type="submit" class="btn btn-sm btn-hover-fill">Запрос</button>
+										<div class="mt-15">
+											<textarea class="form-control" name="message" placeholder="Сообщение"></textarea>
+										</div>
+										<div class="mt-2 mt-lg-4 text-center text-md-left">
+											<button type="submit" class="btn">
+												<i class="icon-right-arrow"></i>
+												<span>Послать запрос</span>
+												<i class="icon-right-arrow"></i>
+											</button>
 										</div>
 									</form>
 								</div>
 							</div>
-							<div class="col">
+							<!-- <div class="col">
 								<a href="#" class="link">
 									<i class="icon-calendar"></i><span>График врачей</span>
 								</a>
@@ -255,7 +232,7 @@
 									<p class="text-right"><a href="#specialistsSection"
 											class="btn btn-sm btn-hover-fill link-inside">Детали</a></p>
 								</div>
-							</div>
+							</div> -->
 							<div class="col col-close"><a href="#" class="js-quickLinks-close"><i class="icon-top"
 										data-toggle="tooltip" data-placement="top" title="Close panel"></i></a></div>
 						</div>
@@ -377,14 +354,14 @@
 							</div>
 						</div>
 						<div class="col-md col-img">
-							<img src="images/content/slider/slide-01.jpg" alt="" class="img-fluid">
+							<img src="images/slider/e1_6_11zon.webp" alt="" class="img-fluid">
 						</div>
 					</div>
 				</div>
 				<div class="single-service">
 					<div class="row">
 						<div class="col-md col-img text-right">
-							<img src="images/content/slider/slide-02.jpg" alt="" class="img-fluid">
+							<img src="images/slider/e2_7_11zon.webp" alt="" class="img-fluid">
 						</div>
 						<div class="col-md">
 							<div class="text-left pr-0 pr-md-3 pr-lg-6">
@@ -410,14 +387,14 @@
 							</div>
 						</div>
 						<div class="col-md col-img">
-							<img src="images/content/slider/slide-03.jpg" alt="" class="img-fluid">
+							<img src="images/slider/e5_1_11zon.webp" alt="" class="img-fluid">
 						</div>
 					</div>
 				</div>
 				<div class="single-service">
 					<div class="row">
 						<div class="col-md col-img text-right">
-							<img src="images/content/slider/slide-04.jpg" alt="" class="img-fluid">
+							<img src="images/slider/e8_4_11zon.webp" alt="" class="img-fluid">
 						</div>
 						<div class="col-md">
 							<div class="text-left pr-0 pr-md-3 pr-lg-6">
@@ -608,46 +585,6 @@
 				<div class="col-sm-6 col-md-4 category1">
 					<div class="doctor-box doctor-box-style2 text-center">
 						<div class="doctor-box-photo">
-							<img src="images/doctors/9.webp" class="img-fluid" alt="">
-						</div>
-						<div class="doctor-box-top">
-							<h5 class="doctor-box-name">Тожибоев Зокир Тешабоевич</h5>
-							<div class="doctor-box-position">Невропатолог</div>
-						</div>
-
-					</div>
-				</div>
-
-
-				<div class="col-sm-6 col-md-4 category1">
-					<div class="doctor-box doctor-box-style2 text-center">
-						<div class="doctor-box-photo">
-							<img src="images/doctors/14.webp" class="img-fluid" alt="">
-						</div>
-						<div class="doctor-box-top">
-							<h5 class="doctor-box-name">Юнусова Фотима Шавкатжоновна</h5>
-							<div class="doctor-box-position">Невропатолог</div>
-						</div>
-
-					</div>
-				</div>
-
-
-				<div class="col-sm-6 col-md-4 category1">
-					<div class="doctor-box doctor-box-style2 text-center">
-						<div class="doctor-box-photo">
-							<img src="images/doctors/5.webp" class="img-fluid" alt="">
-						</div>
-						<div class="doctor-box-top">
-							<h5 class="doctor-box-name">Агзамова Лола Саидаминовна </h5>
-							<div class="doctor-box-position">Терапевт-кардиолог</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 category1">
-					<div class="doctor-box doctor-box-style2 text-center">
-						<div class="doctor-box-photo">
 							<img src="images/doctors/4.webp" class="img-fluid" alt="">
 						</div>
 						<div class="doctor-box-top">
@@ -666,19 +603,6 @@
 							<h5 class="doctor-box-name">Тухтаходжаев Мухриддин Хусниддин угли</h5>
 							<div class="doctor-box-position">Врач Отоларинголог</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 category1">
-					<div class="doctor-box doctor-box-style2 text-center">
-						<div class="doctor-box-photo">
-							<img src="images/doctors/8.webp" class="img-fluid" alt="">
-						</div>
-						<div class="doctor-box-top">
-							<h5 class="doctor-box-name">Юнусов Бахром Нигмонжонович </h5>
-							<div class="doctor-box-position">Врач Оталоринголог</div>
-						</div>
-
 					</div>
 				</div>
 
@@ -721,7 +645,151 @@
 					</div>
 				</div>
 
+				<!-- <div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/9.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Тожибоев Зокир Тешабоевич</h5>
+							<div class="doctor-box-position">Невропатолог</div>
+						</div>
 
+					</div>
+				</div> -->
+
+
+				<!-- <div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/14.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Юнусова Фотима Шавкатжоновна</h5>
+							<div class="doctor-box-position">Невропатолог</div>
+						</div>
+
+					</div>
+				</div> -->
+
+
+				<!-- <div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/5.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Агзамова Лола Саидаминовна </h5>
+							<div class="doctor-box-position">Терапевт-кардиолог</div>
+						</div>
+					</div>
+				</div> -->
+
+
+				<!-- <div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/8.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Юнусов Бахром Нигмонжонович </h5>
+							<div class="doctor-box-position">Врач Оталоринголог</div>
+						</div>
+
+					</div>
+				</div> -->
+
+				<!-- new  -->
+		
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/21.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Ибрагимов Бекзод Хусанович</h5>
+							<div class="doctor-box-position">Врач Оталоринголог</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/20.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Шарипов Расулбек Бематович</h5>
+							<div class="doctor-box-position">Стоматолог</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/19.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Атаджанова Холида</h5>
+							<div class="doctor-box-position">Дерматовенеролог</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/18.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Мусаева Шоира</h5>
+							<div class="doctor-box-position">Терапевт-Кардиолог</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/17.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Абдурахмонов Анвар Уктамович</h5>
+							<div class="doctor-box-position">Уролог</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/16.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Иргашева Саида Саибжановна</h5>
+							<div class="doctor-box-position">Терапевт-Кардиолог</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 category1">
+					<div class="doctor-box doctor-box-style2 text-center">
+						<div class="doctor-box-photo">
+							<img src="images/doctors/15.webp" class="img-fluid" alt="">
+						</div>
+						<div class="doctor-box-top">
+							<h5 class="doctor-box-name">Шомансуров Шоанвар Шамуродович</h5>
+							<div class="doctor-box-position">Профессор Невропатолог</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -737,7 +805,7 @@
 	<div class="footer mt-0">
 		<div class="container">
 			<div class="row py-1 py-md-2 px-lg-0">
-				<div class="col-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-3 p-2">
 					<div class="row flex-column flex-md-row flex-lg-column">
 						<div class="col-md col-lg-auto">
 							<div class="footer-logo">
@@ -746,25 +814,28 @@
 							<div class="mt-2 mt-lg-0"></div>
 							<div class="footer-text mt-1 mt-lg-2">
 								<div class="footer-social d-none d-md-block d-lg-none">
-									<a href="https://www.facebook.com/" target="blank" class="hovicon"><i
-											class="icon-facebook-logo"></i></a>
-									<a href="https://www.twitter.com/" target="blank" class="hovicon"><i
-											class="icon-twitter-logo"></i></a>
-									<a href="https://plus.google.com/" target="blank" class="hovicon"><i
-											class="icon-google-logo"></i></a>
-									<a href="https://www.instagram.com/" target="blank" class="hovicon"><i
-											class="icon-instagram"></i></a>
+									<a href="https://www.facebook.com/imedclinic.uz" target="blank" class="hovicon"><i
+										class="icon-facebook-logo"></i></a>
+									<a href="https://t.me/imedclinic" target="blank" class="hovicon">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+											<path fill="#1e76bd" d="M8 0c-4.419 0-8 3.581-8 8s3.581 8 8 8 8-3.581 8-8-3.581-8-8-8zM11.931 5.484l-1.313 6.184c-0.091 0.441-0.356 0.544-0.725 0.341l-2-1.478-0.959 0.934c-0.112 0.109-0.2 0.2-0.4 0.2-0.259 0-0.216-0.097-0.303-0.344l-0.681-2.237-1.978-0.616c-0.428-0.131-0.431-0.425 0.097-0.634l7.706-2.975c0.35-0.159 0.691 0.084 0.556 0.625z"></path>
+										</svg>
+									</a>
+									<a href="https://www.instagram.com/imedclinic.uz/" target="blank" class="hovicon"><i
+										class="icon-instagram"></i></a>
 								</div>
 
 							</div>
 							<div class="footer-social d-md-none d-lg-block mt-2">
-								<a href="https://www.facebook.com/" target="blank" class="hovicon"><i
+								<a href="https://www.facebook.com/imedclinic.uz" target="blank" class="hovicon"><i
 										class="icon-facebook-logo"></i></a>
-								<a href="https://www.twitter.com/" target="blank" class="hovicon"><i
-										class="icon-twitter-logo"></i></a>
-								<a href="https://plus.google.com/" target="blank" class="hovicon"><i
-										class="icon-google-logo"></i></a>
-								<a href="https://www.instagram.com/" target="blank" class="hovicon"><i
+								<a href="https://t.me/imedclinic" target="blank" class="hovicon">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+										<path fill="#1e76bd" d="M8 0c-4.419 0-8 3.581-8 8s3.581 8 8 8 8-3.581 8-8-3.581-8-8-8zM11.931 5.484l-1.313 6.184c-0.091 0.441-0.356 0.544-0.725 0.341l-2-1.478-0.959 0.934c-0.112 0.109-0.2 0.2-0.4 0.2-0.259 0-0.216-0.097-0.303-0.344l-0.681-2.237-1.978-0.616c-0.428-0.131-0.431-0.425 0.097-0.634l7.706-2.975c0.35-0.159 0.691 0.084 0.556 0.625z"></path>
+									</svg>
+								</a>
+				
+								<a href="https://www.instagram.com/imedclinic.uz/" target="blank" class="hovicon"><i
 										class="icon-instagram"></i></a>
 							</div>
 						</div>
@@ -773,7 +844,7 @@
 				</div>
 				
 
-				<div class="col-6 col-md-4">
+				<div class="col-12 col-sm-6 col-md-4 p-2">
 					<div>
 						<h4>Наши контакты</h4>
 						<div class="h-decor"></div>
@@ -786,6 +857,9 @@
 								<i class="icon-telephone"></i>
 								<b>
 									<span class="phone">
+										<span class="text-nowrap">
+											<a href="tel: +998991096622">99 1096622</a>
+										</span>
 										<span class="text-nowrap">
 											<a href="tel:+998712066622">71 2066622</a>
 										</span>,
@@ -800,8 +874,8 @@
 					</div>
 				</div>
 
-				<div class="col-12 col-md-5">
-					<div class="row p-2">
+				<div class="col-12 col-md-5 p-2">
+					<div class="row">
 						<h4 class="text-center m-0 p-0">
 							<span>
 								Ищете <span class="theme-color">сертифицированного врача?</span>
@@ -869,7 +943,9 @@
 	</div>
 	<!--//footer-->
 	<div class="backToTop js-backToTop">
-		<i class="icon icon-up-arrow"></i>
+		<a a href="tel:+998991096622" style="color:white">
+			<i class="icon icon-telephone"></i>
+		</a>
 	</div>
 	<div class="modal modal-form modal-form-sm fade" id="modalQuestionForm">
 		<div class="modal-dialog">
@@ -927,86 +1003,37 @@
 				<div class="modal-body">
 					<div class="modal-form">
 						<h3>Записаться на прием</h3>
-						<form class="mt-15" id="bookingForm" method="post" novalidate>
+						<form class="contact-form" id="bookingForm" name="bookingForm" method="post"
+							novalidate="novalidate">
 							<div class="successform">
 								<p>Ваше сообщение было успешно отправлено!</p>
 							</div>
 							<div class="errorform">
 								<p>Что-то пошло не так, попробуйте обновить и отправить форму еще раз.</p>
 							</div>
-							<div class="input-group">
-								<span>
-									<i class="icon-user"></i>
-								</span>
-								<input type="text" name="bookingname" class="form-control" autocomplete="off"
-									placeholder="Имя" />
-							</div>
-							<div class="row row-xs-space mt-1">
+							<div class="row row-sm-space mt-15">
 								<div class="col-sm-6">
-									<div class="input-group">
-										<span>
-											<i class="icon-email2"></i>
-										</span>
-										<input type="text" name="bookingemail" class="form-control" autocomplete="off"
-											placeholder="Эл.адрес" />
-									</div>
+									<input type="text" class="form-control" name="name" placeholder="Имя*">
+
 								</div>
-								<div class="col-sm-6 mt-1 mt-sm-0">
-									<div class="input-group">
-										<span>
-											<i class="icon-smartphone"></i>
-										</span>
-										<input type="text" name="bookingphone" class="form-control" autocomplete="off"
-											placeholder="Телефон" />
-									</div>
-								</div>
-							</div>
-							<div class="row row-xs-space mt-1">
 								<div class="col-sm-6">
-									<div class="input-group">
-										<span>
-											<i class="icon-birthday"></i>
-										</span>
-										<input type="text" name="bookingage" class="form-control" autocomplete="off"
-											placeholder="Возраст" />
-									</div>
+									<input type="text" class="form-control" name="phone" placeholder="Телефон*">
+								</div>
+
+							</div>
+							<div class="row row-sm-space mt-15">
+								<div class="col-sm-6">
 								</div>
 							</div>
-							<div class="selectWrapper input-group mt-1">
-								<span>
-									<i class="icon-tooth"></i>
-								</span>
-								<select name="bookingservice" class="form-control">
-									<option selected="selected" disabled="disabled">Выберите услугу</option>
-									<option value="Cosmetic Dentistry">Косметическая стоматология</option>
-									<option value="General Dentistry">Общая стоматология</option>
-									<option value="Orthodontics">Ортодонтия</option>
-									<option value="Children`s Dentistry">Детская стоматология</option>
-									<option value="Dental Implants">Зубные имплантаты</option>
-									<option value="Dental Emergency">Стоматологическая неотложная помощь</option>
-								</select>
+							<div class="mt-15">
+								<textarea class="form-control" name="message" placeholder="Сообщение"></textarea>
 							</div>
-							<div class="input-group flex-nowrap mt-1">
-								<span>
-									<i class="icon-calendar2"></i>
-								</span>
-								<div class="datepicker-wrap">
-									<input name="bookingdate" type="text" class="form-control datetimepicker"
-										placeholder="Дата" readonly>
-								</div>
-							</div>
-							<div class="input-group flex-nowrap mt-1">
-								<span>
-									<i class="icon-clock"></i>
-								</span>
-								<div class="datepicker-wrap">
-									<input name="bookingtime" type="text" class="form-control timepicker"
-										placeholder="Время">
-								</div>
-							</div>
-							<textarea name="bookingmessage" class="form-control" placeholder="Комментария"></textarea>
-							<div class="text-right mt-2">
-								<button type="submit" class="btn btn-sm btn-hover-fill">Забронируйте сейчас</button>
+							<div class="mt-2 mt-lg-4 text-center text-md-left">
+								<button type="submit" class="btn">
+									<i class="icon-right-arrow"></i>
+									<span>Послать запрос</span>
+									<i class="icon-right-arrow"></i>
+								</button>
 							</div>
 						</form>
 					</div>
